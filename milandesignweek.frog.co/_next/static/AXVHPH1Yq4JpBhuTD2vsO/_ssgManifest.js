@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F","\u002Fabout","\u002Fcannes","\u002Fcareers","\u002Fcontact","\u002Fcontact\u002Fthank-you","\u002Fcookie-settings","\u002Fculture","\u002Fculture\u002Fdei","\u002Fdesignmind","\u002Fmake-your-mark","\u002Fmilandesignweek\u002F2025","\u002Fnews","\u002Fplay","\u002Fservices","\u002Fwork"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

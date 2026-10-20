@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html><head><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTJ446');</script><!-- End Google Tag Manager --><base href=""><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description" content="Financial services firms are investing billions in digital transformation (DX) initiatives - yet these efforts continually fall short."><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="googlebot" content="index, nofollow"><meta name="robots" content="index"><link rel="shortcut icon" type="image/png" href="../frog-favicon.png"><title>Digital Transformation Needs Design</title><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.42857143;
+            color: #000000;
+            background-color: #fff;
+        }
+
+        /* --------------------------------------------------------------
+            FORM STYLES
+        ----------------------------------------------------------------- */
+
+            /* Border-box box model FTW! */
+            #pardot-form,
+            #pardot-form *,
+            #pardot-form *:before,
+            #pardot-form *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            /* Override form margin and padding set in the default stylesheet. Inherit font and color from page. */
+            #pardot-form {
+                margin: 0;
+                padding: 0;
+                font: inherit;
+                color: inherit;
+            }
+
+            /* Override form field wrapper margin and padding set in the default stylesheet. */
+            #pardot-form .form-field,
+            #pardot-form .submit {
+                margin: 15px 0 15px 0;
+                padding: 0;
+            }
+
+            /* Remove top margin from first from field wrapper. */
+            #pardot-form .form-field:first-child {
+                margin-top: 0;
+            }
+
+            /* Set default input style. */
+            #pardot-form input {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                color: #2c3e50;
+                font-size: 16px;
+                padding: 5px 10px;
+                width: auto;
+            }
+            #pardot-form select {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            #pardot-form .submit input {
+                padding: 7px 40px!important;
+            }
+            
+            p.form-field.Terms___Condition.pd-checkbox.required.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Opted_In.pd-checkbox.no-label {
+                font-size: 14px;
+            }
+            
+
+            /* When labels are not floated left, set width on text inputs, textareas, and selects to 100%. */
+            #pardot-form input.text,
+            #pardot-form input.date,
+            #pardot-form textarea,
+            #pardot-form select {
+                width: 100%;
+                font-family: inherit;
+                color: inherit;
+            }
+
+            /* When labels are floated left, set width on field labels to a percentage of available width. In browsers that support calc(), use static label width instead and the form field will consume the remaining width. */
+            #pardot-form.label-left .field-label {
+                width: 35%;
+                width: calc(115px);
+            }
+
+            /* When labels are floated left, set width on text inputs, textareas, and selects to a percentage. In supported browsers, set width to 100% minus the width of the label instead. */
+            #pardot-form.label-left input.text,
+            #pardot-form.label-left input.date,
+            #pardot-form.label-left textarea,
+            #pardot-form.label-left select {
+                width: 65%;
+                width: calc(100% - 115px);
+            }
+
+            /* When labels are floated left, indent supporting form elements by the same amount as the field label. */
+            #pardot-form.label-left span.value,
+            #pardot-form.label-left .description,
+            #pardot-form.label-left .no-label > *,
+            #pardot-form.label-left .submit,
+            #pardot-form.label-left .error.no-label {
+                margin-left: 35%;
+                margin-left: calc(115px);
+            }
+
+            /* Remove unnecessary left padding on required radio/checkbox field labels when label alignment is set to above and the required symbol is set to default in form styling options. */
+            #pardot-form label.inline {
+                padding-left: 0;
+            }
+
+            /* Backup styles in case padding is added to text inputs. */
+            #pardot-form input.date {
+                padding-left: 20px;
+                background-position: left center;
+            }
+
+            #pardot-form .submit input {
+                background-color: #000000;
+                color: #fff;
+                font-size: 20px;
+            }
+            
+            p.form-field.Terms___Condition.pd-checkbox.required.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Opted_In.pd-checkbox.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Terms___Condition.pd-checkbox.required {
+        font-size: 14px;
+      }
+       input[type=checkbox] {
+    margin-right: 5px!important;
+}
+
+        /* --------------------------------------------------------------
+            TEMPLATE DETAILS
+        ----------------------------------------------------------------- */
+
+            /* Center the logo */
+            .logo{
+                text-align: left;
+            }
+
+            /* Grey BG */
+            .grey{
+                background-color:#eee;
+            }
+            .white{
+                background-color:#fff;
+            }
+            .black{
+                background-color:#000;
+            }
+            .jumbotron{
+                    background-color: #fff;
+                    padding-bottom: 5px;
+                }
+                .border-frog {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #000;
+                }
+        footer p, footer a {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+            /*Font*/
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 42px;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+            .span-frog span {
+                font-size: 24px;
+            }
+            .h1-frog h1 {
+                font-size: 42px;
+                font-weight: 400;
+            }
+            .h2-frog h2 {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            /* Images do not extend containers */
+            img{
+                max-width: 100%;
+            }
+
+            /* callout box */
+            .callout-box{
+                background-color: #eee;
+                width:100%;
+            }
+            .callout-box .inner{
+                padding: 15px;
+                
+            }
+
+            /* Enable strong control over editable table cell widths */
+            table.editable-table {
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            /* Set default editable table cell spacing & widths */
+            table.editable-table.3col td {
+                padding:0px 15px;
+                width:33%;
+            }
+            table.editable-table.2col td {
+                padding:0px 15px;
+                width:50%;
+            }
+
+            /*frog*/
+            p.frog-social img {
+            width: 25px;
+            margin-right: 5px;
+            }
+            p.legal-frog, p.legal-frog a {
+            font-size: 10px;
+            color: #999999 !important;
+            letter-spacing: .2px !important;
+            }
+            p.legal-frog ahover {
+            color: #999999 !important;
+            }
+            footer a:hover {
+            color: #ffffff;
+            }
+
+        /* --------------------------------------------------------------
+            SPACING
+        ----------------------------------------------------------------- */
+
+            /* make element edge to edge */
+            .flush {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            /* vertical padding */
+            .vpadding {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            /* vertical alignment */
+            .vcenter {
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
+            }
+            .vleft {
+                display: inline-block;
+                vertical-align: left;
+                float: none;
+            }
+
+            /* side padding only */
+            .hpadding {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* top padding only */
+            .tpadding {
+                padding-top: 20px;
+                padding-bottom: 0px;
+            }
+
+            /* bottom padding only */
+            .bpadding {
+                padding-top:0px;
+                padding-bottom:20px;
+            }
+
+        /* --------------------------------------------------------------
+            SOCIAL
+        ----------------------------------------------------------------- */
+
+            /* Social list spacing */
+            .social-list{
+                padding-left:0;
+            } 
+
+                /* Social list display next to one another */
+                .social-list li, .social-list{
+                    display:inline;
+                }
+
+                /* Disable underlines on image link hover */
+                .social-list a:hover{
+                    text-decoration: none;
+                }
+
+
+            /* Share button image specific style */
+            #share-buttons img {
+                width: 20px;
+                border: 0;
+                box-shadow: 0;
+                display: inline;
+            }
+
+            /* --------------------------------------------------------------
+                RESPONSIVE
+            ----------------------------------------------------------------- */
+            /* xs */
+            @media(max-width:767px){
+                .pull-right{
+                    float: none !important;
+                    text-align: center;
+                }
+                .social{
+                    text-align: center;
+                }
+                .cta{
+                    padding-top: 20px;
+                }
+                .cta p{
+                    margin-bottom: 0;
+                }
+                .jumbotron{
+                    margin-bottom: 0;
+                    background-color: #fff;
+                }
+                .jumbogron p{
+                    margin-bottom: 0;
+                }
+                .vcenter{
+                    width:100%;
+                    text-align: center;
+                }
+                .vleft{
+                    width:100%;
+                    text-align: left;
+                }
+            }
+            /* sm */
+            @media (max-width:768px){
+                #pardot-form.label-left .field-label {
+                    width: 100%;
+                    text-align: left;
+                }
+                #pardot-form.label-left input.text, #pardot-form.label-left input.date, #pardot-form.label-left textarea, #pardot-form.label-left select {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value,
+                #pardot-form.label-left .description,
+                #pardot-form.label-left .no-label > *,
+                #pardot-form.label-left .submit,
+                #pardot-form.label-left .error.no-label {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value, #pardot-form.label-left .description, #pardot-form.label-left .no-label > *, #pardot-form.label-left .submit, #pardot-form.label-left .error.no-label {
+                    margin-left: 0;
+                }
+                form.form p {
+                    margin-left: 0px !important;
+                    padding-left:0px !important;
+                }
+                table.editable-table td {
+                    display: block;
+                    width: 100% !important;
+                }
+            }
+            /* md */
+            @media(max-width:992px){
+
+            }
+            /* lg */
+            @media(min-width:1200px){
+
+            }
+        </style><link rel="stylesheet" type="text/css" href="../css/form.css@ver=2021-09-20.css"><script type="text/javascript" src="../js/piUtils.js@ver=2021-09-20"></script><script type="text/javascript">
+piAId = '96412';
+piCId = '115821';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head><body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTJ446" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 logo">
+                <div class="editable">
+                  <a href="../../frog.co/index.html" target="_blank"><img src="../l/95412/2022-05-02/6ddydz/95412/16515147232O5NvFkF/frog_Cap_Invent_logo_horizontal_black_600.png" width="180" alt="logo" placehold="logo" pardot-region="logo" pardot-region-type="image"></a>
+                </div>
+              </div><!--
+              --><!-- col-md-9 -->
+          </div><!-- row -->
+      </div><!-- container -->
+    </div>
+
+    <div class="container">
+        <div class="row vpadding">
+            <div class="col-md-12 clearfix border-frog">
+                <div class="editable span-frog">
+                    <span pardot-region="title" data-id="45901" data-hml-enabled="1"></span>
+                </div>
+                <div class="editable h1-frog">
+                    <h1 class="tagline" pardot-region="subtitle" data-id="45904" data-hml-enabled="1">Digital Transformation Needs Design</h1>
+                </div>
+                <div class="editable h2-frog">
+                    <h2 class="tagline" pardot-region="text" data-id="45907" data-hml-enabled="1">An insights report by frog's AVP of Innovation Strategy &amp; Financial Services Lead, Toshi Mogi</h2>
+                </div>
+                <div class="editable feature-img" style="text-align:center;">
+                             <img src="https://go.capgeminigroup.com/l/95412/2022-05-20/6jwcvk/95412/1653077296oq79TcWS/FinServ_POV_Email.jpg" alt="" pardot-region="feature_image" pardot-region-type="image" width="" height="" data-id="45910"></div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-6 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content1" data-id="45913" data-hml-enabled="1"><p>Financial services firms are investing billions in digital transformation (DX) initiatives - yet these efforts continually fall short. With consumers increasingly expecting and demanding intelligently-designed user experiences, emerging digital competitors such as Apple, Facebook, Google and Amazon are not just testing the waters, but are poised to disrupt financial services at its very foundation.</p></div>
+                    </div>
+                    <div class="col-sm-6 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content2" data-id="45916" data-hml-enabled="1"><p>Read our latest insights report by frog's AVP of Innovation Strategy &amp; Financial Services Practice Lead, Toshi Mogi, to learn why digital transformation <em>without</em> design will only lead to improved efficiency in a soon-to-be outdated service model; and correspondingly, learn why digital transformation <em>with</em> design is no longer a nice-to-have, but a necessity for survival.</p></div>
+                    </div>
+                     
+
+                </div><!-- row -->
+            </div><!-- div-md-8 -->
+
+            <div class="col-md-12 row clearfix">
+                    <div class="col-sm-4 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content3" data-id="45919" data-hml-enabled="1"><p><strong>Download this report to learn more about:</strong></p>
+
+<ul><li>How digital transformation is falling short without CX</li>
+	<li>The transition from digitization to transformation</li>
+	<li>3 strategies for DX that's in service of CX</li>
+</ul></div>
+                    </div>
+                    <div class="col-sm-8 vpadding clearfix">
+                        <div class="editable clearfix">
+                    <form accept-charset="UTF-8" method="post" action="digital-transformation-needs-design.html" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style><p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="95412_239407pi_95412_239407">First name</label>
+				
+
+				<input type="text" name="95412_239407pi_95412_239407" id="95412_239407pi_95412_239407" value="" class="text" size="30" maxlength="40" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239407pi_95412_239407" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="95412_239410pi_95412_239410">Last name</label>
+				
+
+				<input type="text" name="95412_239410pi_95412_239410" id="95412_239410pi_95412_239410" value="" class="text" size="30" maxlength="80" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239410pi_95412_239410" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="95412_239413pi_95412_239413">Work Email</label>
+				
+
+				<input type="text" name="95412_239413pi_95412_239413" id="95412_239413pi_95412_239413" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239413pi_95412_239413" style="display:none"></div>
+			
+		
+			<p class="form-field  company pd-text required    ">
+				
+					<label class="field-label" for="95412_239416pi_95412_239416">Company name</label>
+				
+
+				<input type="text" name="95412_239416pi_95412_239416" id="95412_239416pi_95412_239416" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239416pi_95412_239416" style="display:none"></div>
+			
+		
+			<p class="form-field  Sector pd-text required    ">
+				
+					<label class="field-label" for="95412_239419pi_95412_239419">Sector</label>
+				
+
+				<input type="text" name="95412_239419pi_95412_239419" id="95412_239419pi_95412_239419" value="" class="text" size="30" maxlength="65535" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239419pi_95412_239419" style="display:none"></div>
+			
+		
+			<p class="form-field  job_title pd-text required    ">
+				
+					<label class="field-label" for="95412_239422pi_95412_239422">Job title</label>
+				
+
+				<input type="text" name="95412_239422pi_95412_239422" id="95412_239422pi_95412_239422" value="" class="text" size="30" maxlength="128" onchange="" onfocus=""></p>
+			<div id="error_for_95412_239422pi_95412_239422" style="display:none"></div>
+			
+		
+			<p class="form-field  country pd-select required    ">
+				
+					<label class="field-label" for="95412_239425pi_95412_239425">Country/Region</label>
+				
+
+				<select name="95412_239425pi_95412_239425" id="95412_239425pi_95412_239425" class="select" onchange=""><option value="1891036" selected></option><option value="1891039">United States</option><option value="1891042">Canada</option><option value="1891045">Afghanistan</option><option value="1891048">Albania</option><option value="1891051">Algeria</option><option value="1891054">American Samoa</option><option value="1891057">Andorra</option><option value="1891060">Angola</option><option value="1891063">Anguilla</option><option value="1891066">Antarctica</option><option value="1891069">Antigua and Barbuda</option><option value="1891072">Argentina</option><option value="1891075">Armenia</option><option value="1891078">Aruba</option><option value="1891081">Australia</option><option value="1891084">Austria</option><option value="1891087">Azerbaijan</option><option value="1891090">Bahamas</option><option value="1891093">Bahrain</option><option value="1891096">Bangladesh</option><option value="1891099">Barbados</option><option value="1891102">Belarus</option><option value="1891105">Belgium</option><option value="1891108">Belize</option><option value="1891111">Benin</option><option value="1891114">Bermuda</option><option value="1891117">Bhutan</option><option value="1891120">Bolivia</option><option value="1891123">Bosnia and Herzegovina</option><option value="1891126">Botswana</option><option value="1891129">Brazil</option><option value="1891132">British Indian Ocean Territory</option><option value="1891135">British Virgin Islands</option><option value="1891138">Brunei</option><option value="1891141">Bulgaria</option><option value="1891144">Burkina Faso</option><option value="1891147">Burundi</option><option value="1891150">Cambodia</option><option value="1891153">Cameroon</option><option value="1891156">Cape Verde</option><option value="1891159">Cayman Islands</option><option value="1891162">Central African Republic</option><option value="1891165">Chad</option><option value="1891168">Chile</option><option value="1891171">China</option><option value="1891174">Christmas Island</option><option value="1891177">Cocos (Keeling) Islands</option><option value="1891180">Colombia</option><option value="1891183">Comoros</option><option value="1891186">Congo</option><option value="1891189">Cook Islands</option><option value="1891192">Costa Rica</option><option value="1891195">Croatia</option><option value="1891198">Cuba</option><option value="1891201">Curaçao</option><option value="1891204">Cyprus</option><option value="1891207">Czech Republic</option><option value="1891210">Côte d’Ivoire</option><option value="1891213">Democratic Republic of the Congo</option><option value="1891216">Denmark</option><option value="1891219">Djibouti</option><option value="1891222">Dominica</option><option value="1891225">Dominican Republic</option><option value="1891228">Ecuador</option><option value="1891231">Egypt</option><option value="1891234">El Salvador</option><option value="1891237">Equatorial Guinea</option><option value="1891240">Eritrea</option><option value="1891243">Estonia</option><option value="1891246">Ethiopia</option><option value="1891249">Falkland Islands</option><option value="1891252">Faroe Islands</option><option value="1891255">Fiji</option><option value="1891258">Finland</option><option value="1891261">France</option><option value="1891264">French Guiana</option><option value="1891267">French Polynesia</option><option value="1891270">French Southern Territories</option><option value="1891273">Gabon</option><option value="1891276">Gambia</option><option value="1891279">Georgia</option><option value="1891282">Germany</option><option value="1891285">Ghana</option><option value="1891288">Gibraltar</option><option value="1891291">Greece</option><option value="1891294">Greenland</option><option value="1891297">Grenada</option><option value="1891300">Guadeloupe</option><option value="1891303">Guam</option><option value="1891306">Guatemala</option><option value="1891309">Guernsey</option><option value="1891312">Guinea</option><option value="1891315">Guinea-Bissau</option><option value="1891318">Guyana</option><option value="1891321">Haiti</option><option value="1891324">Honduras</option><option value="1891327">Hong Kong S.A.R., China</option><option value="1891330">Hungary</option><option value="1891333">Iceland</option><option value="1891336">India</option><option value="1891339">Indonesia</option><option value="1891342">Iran</option><option value="1891345">Iraq</option><option value="1891348">Ireland</option><option value="1891351">Isle of Man</option><option value="1891354">Israel</option><option value="1891357">Italy</option><option value="1891360">Jamaica</option><option value="1891363">Japan</option><option value="1891366">Jersey</option><option value="1891369">Jordan</option><option value="1891372">Kazakhstan</option><option value="1891375">Kenya</option><option value="1891378">Kiribati</option><option value="1891381">Kuwait</option><option value="1891384">Kyrgyzstan</option><option value="1891387">Laos</option><option value="1891390">Latvia</option><option value="1891393">Lebanon</option><option value="1891396">Lesotho</option><option value="1891399">Liberia</option><option value="1891402">Libya</option><option value="1891405">Liechtenstein</option><option value="1891408">Lithuania</option><option value="1891411">Luxembourg</option><option value="1891414">Macao S.A.R., China</option><option value="1891417">Macedonia</option><option value="1891420">Madagascar</option><option value="1891423">Malawi</option><option value="1891426">Malaysia</option><option value="1891429">Maldives</option><option value="1891432">Mali</option><option value="1891435">Malta</option><option value="1891438">Marshall Islands</option><option value="1891441">Martinique</option><option value="1891444">Mauritania</option><option value="1891447">Mauritius</option><option value="1891450">Mayotte</option><option value="1891453">Mexico</option><option value="1891456">Micronesia</option><option value="1891459">Moldova</option><option value="1891462">Monaco</option><option value="1891465">Mongolia</option><option value="1891468">Montenegro</option><option value="1891471">Montserrat</option><option value="1891474">Morocco</option><option value="1891477">Mozambique</option><option value="1891480">Myanmar</option><option value="1891483">Namibia</option><option value="1891486">Nauru</option><option value="1891489">Nepal</option><option value="1891492">Netherlands</option><option value="1891495">New Caledonia</option><option value="1891498">New Zealand</option><option value="1891501">Nicaragua</option><option value="1891504">Niger</option><option value="1891507">Nigeria</option><option value="1891510">Niue</option><option value="1891513">Norfolk Island</option><option value="1891516">North Korea</option><option value="1891519">Northern Mariana Islands</option><option value="1891522">Norway</option><option value="1891525">Oman</option><option value="1891528">Pakistan</option><option value="1891531">Palau</option><option value="1891534">Palestinian Territory</option><option value="1891537">Panama</option><option value="1891540">Papua New Guinea</option><option value="1891543">Paraguay</option><option value="1891546">Peru</option><option value="1891549">Philippines</option><option value="1891552">Pitcairn</option><option value="1891555">Poland</option><option value="1891558">Portugal</option><option value="1891561">Puerto Rico</option><option value="1891564">Qatar</option><option value="1891567">Romania</option><option value="1891570">Russia</option><option value="1891573">Rwanda</option><option value="1891576">Réunion</option><option value="1891579">Saint Barthélemy</option><option value="1891582">Saint Helena</option><option value="1891585">Saint Kitts and Nevis</option><option value="1891588">Saint Lucia</option><option value="1891591">Saint Pierre and Miquelon</option><option value="1891594">Saint Vincent and the Grenadines</option><option value="1891597">Samoa</option><option value="1891600">San Marino</option><option value="1891603">Sao Tome and Principe</option><option value="1891606">Saudi Arabia</option><option value="1891609">Senegal</option><option value="1891612">Serbia</option><option value="1891615">Seychelles</option><option value="1891618">Sierra Leone</option><option value="1891621">Singapore</option><option value="1891624">Slovakia</option><option value="1891627">Slovenia</option><option value="1891630">Solomon Islands</option><option value="1891633">Somalia</option><option value="1891636">South Africa</option><option value="1891639">South Korea</option><option value="1891642">South Sudan</option><option value="1891645">Spain</option><option value="1891648">Sri Lanka</option><option value="1891651">Sudan</option><option value="1891654">Suriname</option><option value="1891657">Svalbard and Jan Mayen</option><option value="1891660">Swaziland</option><option value="1891663">Sweden</option><option value="1891666">Switzerland</option><option value="1891669">Syria</option><option value="1891672">Taiwan</option><option value="1891675">Tajikistan</option><option value="1891678">Tanzania</option><option value="1891681">Thailand</option><option value="1891684">Timor-Leste</option><option value="1891687">Togo</option><option value="1891690">Tokelau</option><option value="1891693">Tonga</option><option value="1891696">Trinidad and Tobago</option><option value="1891699">Tunisia</option><option value="1891702">Turkey</option><option value="1891705">Turkmenistan</option><option value="1891708">Turks and Caicos Islands</option><option value="1891711">Tuvalu</option><option value="1891714">U.S. Virgin Islands</option><option value="1891717">Uganda</option><option value="1891720">Ukraine</option><option value="1891723">United Arab Emirates</option><option value="1891726">United Kingdom</option><option value="1891729">United States Minor Outlying Islands</option><option value="1891732">Uruguay</option><option value="1891735">Uzbekistan</option><option value="1891738">Vanuatu</option><option value="1891741">Vatican</option><option value="1891744">Venezuela</option><option value="1891747">Viet Nam</option><option value="1891750">Wallis and Futuna</option><option value="1891753">Western Sahara</option><option value="1891756">Yemen</option><option value="1891759">Zambia</option><option value="1891762">Zimbabwe</option></select></p>
+			<div id="error_for_95412_239425pi_95412_239425" style="display:none"></div>
+			
+		
+			<p class="form-field  Terms___Condition pd-checkbox required  no-label  ">
+				
+
+				<span class="value"><span><input type="checkbox" name="95412_239428pi_95412_239428_1891765" id="95412_239428pi_95412_239428_1891765" value="1891765" onchange=""><label class="inline" for="95412_239428pi_95412_239428_1891765">*I agree to frog collecting and processing my personal data to allow me to receive information on frog services.</label></span></span>
+				
+			</p>
+			<div id="error_for_95412_239428pi_95412_239428" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"></p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="☃"><p class="submit">
+			<input type="submit" accesskey="s" value="DOWNLOAD"></p>
+	<p><span style="font-size:18px;">For further information, please see our <a href="https://www.capgemini.com/privacy-notice/" target="_blank"><span style="color:#000000; text-decoration: underline;">Privacy Notice</span></a>.</span></p>
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script><input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script></div>
+                    </div>
+                     
+
+                </div><!-- row -->
+
+
+
+        </div><!-- row vpadding -->
+    </div><!--/.container-->
+
+    <div class="black clearfix">
+        <div class="container vpadding">
+            <div class="row">
+                <footer><div class="col-md-12 row clearfix">
+                    <div class="col-sm-3 vpadding clearfix">
+                        <div class="editable logo-footer" style="text-align:center;">
+                             <img src="../l/95412/2022-05-02/6ddyf3/95412/1651514950PnNGjwb2/logo_footer_2022_500.png" alt="frog" pardot-region="logo-footer" pardot-region-type="image" width="165"></div>
+
+                    </div>
+                    <div class="col-sm-9 vpadding clearfix">
+                        <div class="social">
+                          <div class="editable" pardot-region="footer-content">
+                            <p>frog is a leading global creative consultancy, part of Capgemini Invent. We challenge the status quo to craft and build transformative human experiences that win hearts and move markets. Partnering with passionate leaders and visionary entrepreneurs, we apply creativity, strategy, design and data to re-invent businesses, drive growth and orchestrate customer centric transformation. Together we strive to shape a regenerative future that is both sustainable and inclusive for businesses, people and planet.</p>
+                        </div>
+
+                          <p><a href="../../frog.co/index.html" target="_blank" style="text-decoration: underline;">frog.co</a></p>
+
+                          <p class="frog-social">
+                            <a href="https://twitter.com/frogdesign" target="_blank"><img src="../Social-Media-W-Twitter.png"></a>
+                            <a href="https://www.facebook.com/pages/frog-design/5612622846" target="_blank"><img src="../Social-Media-W-Facebook.png"></a>
+                            <a href="https://www.linkedin.com/company/163904" target="_blank"><img src="../Social-Media-W-Linkedin.png"></a>
+                            <a href="https://vimeo.com/frog" target="_blank"><img src="../Social-Media-W-Vimeo.png"></a>
+                            <a href="https://instagram.com/frog_design" target="_blank"><img src="../Social-Media-W-Instagram.png"></a>
+                         </p>
+                         <p class="legal-frog">©2026 frog, part of Capgemini Invent</p>
+                         <p class="legal-frog">
+                            <a href="https://www.capgemini.com/cookie-policy/" target="_blank">Cookie Policy</a> |  <a href="https://www.capgemini.com/privacy-policy/" target="_blank">Privacy Policy</a> | <a href="https://www.capgemini.com/terms-of-use/" target="_blank">Terms of Use</a>
+                        </p>
+                          
+                        </div><!-- social -->
+                    </div>
+                     
+
+                </div>
+
+                </footer></div>
+        </div>
+    </div><!-- grey -->
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script><script>
+
+    /* --------------------------------------------------------------
+        FUNCTIONS
+    ----------------------------------------------------------------- */
+        /**
+         * Replace all occurences of https://simplesharebuttons.com in the
+         * social sharing list with the url of this page, and all occurrence
+         * of "Check this out" with the page title
+         */
+            $(".social-list a").each(function() {
+                // get values
+                var thisPage = window.location.href;
+                var url = $(this).attr('href');
+
+                // get title of this page
+                var title = $(document).find("title").text();
+              
+                // replace values
+                url = url.replace("http://www.pardot.com", thisPage);
+                url = url.replace("template-title", title);
+
+                //update value of the link anchor
+                $(this).attr('href', url);
+            });
+
+        /**
+         * make sure callout box matches height of image it is beside
+         */
+            function checkSize(){
+                /**
+                 * Determine if on mobile screen by checking value of a CSS value
+                 * If elements with .pull-right class is set to float none, then we are 
+                 * on mobile screen. 
+                 * Only apply the equal height script if we are not on mobile screen
+                 */
+                if($('.pull-right').css('float') != "none"){
+                  // Get an array of all element heights
+                  var matchHeights = $('.feature-img img').height();
+                  // Set each height to the max height
+                  $('.equal_height').height(matchHeights);
+                } else {
+                    $('.equal_height').height('auto');
+                }
+            }
+
+            setTimeout( function() {
+                //do something special
+            }, 5000);
+
+            $( document ).ready(function() {
+                setTimeout( function() {
+                    checkSize();
+                }, 2000);
+            });
+        
+            // run test on resize of the window
+            $(window).resize(checkSize);
+            $('.feature-img img').load(function() {  
+              checkSize();  
+            });  
+
+        /**
+         * Pardot label alignment fix
+         */
+            pardot.$(function() {
+                var $ = window.pardot.$;
+                // Add label-left class to the <form> if label alignment is set to Default or Left in form styling
+                var $labelAlignment = $('#pardot-form .field-label').css('float');
+                if ($labelAlignment == 'left') { $('#pardot-form').addClass('label-left'); }
+            });
+
+    </script><script type="“text/javascript”">
+_linkedin_partner_id = “5450970”;
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="“text/javascript”">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName(“script”)[0];
+var b = document.createElement(“script”);
+b.type = “text/javascript”;b.async = true;
+b.src = “https://snap.licdn.com/li.lms-analytics/insight.min.js”;
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script><noscript>
+<img height="“1”" width='“1"' style="“display:none;”" alt="“”" src="../“https%253A/px.ads.linkedin.com/collect/index.html@pid=5450970&amp;fmt=gif”.html"></noscript>
+ </body></html>

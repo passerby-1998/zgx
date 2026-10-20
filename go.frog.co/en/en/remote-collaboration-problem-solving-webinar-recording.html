@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html><head><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTJ446');</script><!-- End Google Tag Manager --><base href=""><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description" content="In this webinar we share frog's Org Activation best practices, exercises and dynamics for conductingidea generation and creative problem-solving sessions while working in a remote environment."><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="googlebot" content="index, nofollow"><meta name="robots" content="index"><link rel="shortcut icon" type="image/png" href="../../frog-favicon.png"><title>How to Manage a Collaborative Problem-Solving Session While Working Remote.</title><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.42857143;
+            color: #000000;
+            background-color: #fff;
+        }
+
+        /* --------------------------------------------------------------
+            FORM STYLES
+        ----------------------------------------------------------------- */
+
+            /* Border-box box model FTW! */
+            #pardot-form,
+            #pardot-form *,
+            #pardot-form *:before,
+            #pardot-form *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            /* Override form margin and padding set in the default stylesheet. Inherit font and color from page. */
+            #pardot-form {
+                margin: 0;
+                padding: 0;
+                font: inherit;
+                color: inherit;
+            }
+
+            /* Override form field wrapper margin and padding set in the default stylesheet. */
+            #pardot-form .form-field,
+            #pardot-form .submit {
+                margin: 15px 0 15px 0;
+                padding: 0;
+            }
+
+            /* Remove top margin from first from field wrapper. */
+            #pardot-form .form-field:first-child {
+                margin-top: 0;
+            }
+
+            /* Set default input style. */
+            #pardot-form input {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                box-sizing: border-box;
+                color: #2c3e50;
+                font-size: 16px;
+                padding: 5px 10px;
+                width: auto;
+            }
+            #pardot-form select {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            #pardot-form .submit input {
+                padding: 7px 40px!important;
+            }
+            
+            p.form-field.Terms___Condition.pd-checkbox.required.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Opted_In.pd-checkbox.no-label {
+                font-size: 14px;
+            }
+            
+
+            /* When labels are not floated left, set width on text inputs, textareas, and selects to 100%. */
+            #pardot-form input.text,
+            #pardot-form input.date,
+            #pardot-form textarea,
+            #pardot-form select {
+                width: 100%;
+                font-family: inherit;
+                color: inherit;
+            }
+
+            /* When labels are floated left, set width on field labels to a percentage of available width. In browsers that support calc(), use static label width instead and the form field will consume the remaining width. */
+            #pardot-form.label-left .field-label {
+                width: 35%;
+                width: calc(115px);
+            }
+
+            /* When labels are floated left, set width on text inputs, textareas, and selects to a percentage. In supported browsers, set width to 100% minus the width of the label instead. */
+            #pardot-form.label-left input.text,
+            #pardot-form.label-left input.date,
+            #pardot-form.label-left textarea,
+            #pardot-form.label-left select {
+                width: 65%;
+                width: calc(100% - 115px);
+            }
+
+            /* When labels are floated left, indent supporting form elements by the same amount as the field label. */
+            #pardot-form.label-left span.value,
+            #pardot-form.label-left .description,
+            #pardot-form.label-left .no-label > *,
+            #pardot-form.label-left .submit,
+            #pardot-form.label-left .error.no-label {
+                margin-left: 35%;
+                margin-left: calc(115px);
+            }
+
+            /* Remove unnecessary left padding on required radio/checkbox field labels when label alignment is set to above and the required symbol is set to default in form styling options. */
+            #pardot-form label.inline {
+                padding-left: 0;
+            }
+
+            /* Backup styles in case padding is added to text inputs. */
+            #pardot-form input.date {
+                padding-left: 20px;
+                background-position: left center;
+            }
+
+            #pardot-form .submit input {
+                background-color: #000000;
+                color: #fff;
+                font-size: 20px;
+            }
+            
+            p.form-field.Terms___Condition.pd-checkbox.required.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Opted_In.pd-checkbox.no-label {
+                font-size: 14px;
+            }
+            p.form-field.Terms___Condition.pd-checkbox.required {
+        font-size: 14px;
+      }
+       input[type=checkbox] {
+    margin-right: 5px!important;
+}
+
+        /* --------------------------------------------------------------
+            TEMPLATE DETAILS
+        ----------------------------------------------------------------- */
+
+            /* Center the logo */
+            .logo{
+                text-align: left;
+            }
+
+            /* Grey BG */
+            .grey{
+                background-color:#eee;
+            }
+            .white{
+                background-color:#fff;
+            }
+            .black{
+                background-color:#000;
+            }
+            .jumbotron{
+                    background-color: #fff;
+                    padding-bottom: 5px;
+                }
+                .border-frog {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #000;
+                }
+        footer p, footer a {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+            /*Font*/
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 42px;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+            .span-frog span {
+                font-size: 24px;
+            }
+            .h1-frog h1 {
+                font-size: 42px;
+                font-weight: 400;
+            }
+            .h2-frog h2 {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            /* Images do not extend containers */
+            img{
+                max-width: 100%;
+            }
+
+            /* callout box */
+            .callout-box{
+                background-color: #eee;
+                width:100%;
+            }
+            .callout-box .inner{
+                padding: 15px;
+                
+            }
+
+            /* Enable strong control over editable table cell widths */
+            table.editable-table {
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            /* Set default editable table cell spacing & widths */
+            table.editable-table.3col td {
+                padding:0px 15px;
+                width:33%;
+            }
+            table.editable-table.2col td {
+                padding:0px 15px;
+                width:50%;
+            }
+
+            /*frog*/
+            p.frog-social img {
+            width: 25px;
+            margin-right: 5px;
+            }
+            p.legal-frog, p.legal-frog a {
+            font-size: 10px;
+            color: #999999 !important;
+            letter-spacing: .2px !important;
+            }
+            p.legal-frog ahover {
+            color: #999999 !important;
+            }
+            footer a:hover {
+            color: #ffffff;
+            }
+
+        /* --------------------------------------------------------------
+            SPACING
+        ----------------------------------------------------------------- */
+
+            /* make element edge to edge */
+            .flush {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            /* vertical padding */
+            .vpadding {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            
+            /* vertical alignment */
+            .vcenter {
+                display: inline-block;
+                vertical-align: middle;
+                float: none;
+            }
+            .vleft {
+                display: inline-block;
+                vertical-align: left;
+                float: none;
+            }
+
+            /* side padding only */
+            .hpadding {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* top padding only */
+            .tpadding {
+                padding-top: 20px;
+                padding-bottom: 0px;
+            }
+
+            /* bottom padding only */
+            .bpadding {
+                padding-top:0px;
+                padding-bottom:20px;
+            }
+
+        /* --------------------------------------------------------------
+            SOCIAL
+        ----------------------------------------------------------------- */
+
+            /* Social list spacing */
+            .social-list{
+                padding-left:0;
+            } 
+
+                /* Social list display next to one another */
+                .social-list li, .social-list{
+                    display:inline;
+                }
+
+                /* Disable underlines on image link hover */
+                .social-list a:hover{
+                    text-decoration: none;
+                }
+
+
+            /* Share button image specific style */
+            #share-buttons img {
+                width: 20px;
+                border: 0;
+                box-shadow: 0;
+                display: inline;
+            }
+
+            /* --------------------------------------------------------------
+                RESPONSIVE
+            ----------------------------------------------------------------- */
+            /* xs */
+            @media(max-width:767px){
+                .pull-right{
+                    float: none !important;
+                    text-align: center;
+                }
+                .social{
+                    text-align: center;
+                }
+                .cta{
+                    padding-top: 20px;
+                }
+                .cta p{
+                    margin-bottom: 0;
+                }
+                .jumbotron{
+                    margin-bottom: 0;
+                    background-color: #fff;
+                }
+                .jumbogron p{
+                    margin-bottom: 0;
+                }
+                .vcenter{
+                    width:100%;
+                    text-align: center;
+                }
+                .vleft{
+                    width:100%;
+                    text-align: left;
+                }
+            }
+            /* sm */
+            @media (max-width:768px){
+                #pardot-form.label-left .field-label {
+                    width: 100%;
+                    text-align: left;
+                }
+                #pardot-form.label-left input.text, #pardot-form.label-left input.date, #pardot-form.label-left textarea, #pardot-form.label-left select {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value,
+                #pardot-form.label-left .description,
+                #pardot-form.label-left .no-label > *,
+                #pardot-form.label-left .submit,
+                #pardot-form.label-left .error.no-label {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value, #pardot-form.label-left .description, #pardot-form.label-left .no-label > *, #pardot-form.label-left .submit, #pardot-form.label-left .error.no-label {
+                    margin-left: 0;
+                }
+                form.form p {
+                    margin-left: 0px !important;
+                    padding-left:0px !important;
+                }
+                table.editable-table td {
+                    display: block;
+                    width: 100% !important;
+                }
+            }
+            /* md */
+            @media(max-width:992px){
+
+            }
+            /* lg */
+            @media(min-width:1200px){
+
+            }
+        </style><link rel="stylesheet" type="text/css" href="../../css/form.css@ver=2021-09-20.css"><script type="text/javascript" src="../../js/piUtils.js@ver=2021-09-20"></script><script type="text/javascript">
+piAId = '96412';
+piCId = '115683';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head><body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTJ446" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 logo">
+                <div class="editable">
+                  <a href="../../../frog.co/index.html" target="_blank"><img src="../../l/95412/2022-05-02/6ddydz/95412/16515147232O5NvFkF/frog_Cap_Invent_logo_horizontal_black_600.png" width="180" alt="logo" placehold="logo" pardot-region="logo" pardot-region-type="image"></a>
+                </div>
+              </div><!--
+              --><!-- col-md-9 -->
+          </div><!-- row -->
+      </div><!-- container -->
+    </div>
+
+    <div class="container">
+        <div class="row vpadding">
+            <div class="col-md-12 clearfix border-frog">
+                <div class="editable span-frog">
+                    <span pardot-region="title" data-id="47854" data-hml-enabled="1"></span>
+                </div>
+                <div class="editable h1-frog">
+                    <h1 class="tagline" pardot-region="subtitle" data-id="47857" data-hml-enabled="1">How to Manage a Collaborative Problem-Solving Session While Working Remote.</h1>
+                </div>
+                <div class="editable h2-frog">
+                    <h2 class="tagline" pardot-region="text" data-id="47860" data-hml-enabled="1">AWEBINAR HOSTED BY frog EXPERTS IN ORG.ACTIVATION</h2>
+                </div>
+                <div class="editable feature-img" style="text-align:center;">
+                             <img src="../../RCwebinar_E.html" alt="" pardot-region="feature_image" pardot-region-type="image" width="" height="" data-id="47863"></div>
+
+                <div class="row clearfix">
+                    <div class="col-sm-6 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content1" data-id="47866" data-hml-enabled="1"><div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/734082266?h=092b6e18f7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RCwebinar_E.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                    </div>
+                    <div class="col-sm-6 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content2" data-id="47869" data-hml-enabled="1"><p>In this webinar we share frog's Org Activation best practices, exercises and dynamics for conducting idea generation and creative problem-solving sessions while working in a remote environment.</p>
+
+<p> </p>
+
+<p><strong>THE PRESENTERS</strong></p>
+
+<p><span style="font-size:24px;">Turi McKinley</span></p>
+
+<p>Global Practice Lead and Executive Director, Org Activation at frog</p>
+
+<p><span style="font-size:24px;">Cristobal Perán</span></p>
+
+<p>Org Activation Director and Spain Studios Head at frog</p></div>
+                    </div>
+                     
+
+                </div><!-- row -->
+            </div><!-- div-md-8 -->
+
+            <div class="col-md-12 row clearfix">
+                    <div class="col-sm-4 vpadding clearfix">
+                        <div class="editable" pardot-region="main-content3" data-id="47872" data-hml-enabled="1"><p><strong>WATCH THE RECORDED WEBINAR TO LEARN MORE ABOUT</strong></p>
+
+<ul><li>The importance of using creativity as a trigger to breakthroughs in social and corporate life.</li>
+</ul><section data-annotation-id="22R"><ul><li>Different ways of thinking, inventing and problem-solving</li>
+	<li>The relevance of climate management, collaboration mindset and empathy in ideation sessions</li>
+	<li>Exercises and techniques to unleash your team’s creative potential How to prepare and conduct a remote ideation session</li>
+	<li>How to use digital tools for remote collaboration</li>
+	<li>Processes and tools as applied to a real, current frog case study</li>
+</ul></section></div>
+                    </div>
+                    <div class="col-sm-8 vpadding clearfix">
+                        <div class="editable clearfix">
+                    <form accept-charset="UTF-8" method="post" action="remote-collaboration-problem-solving-webinar-recording.html" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style><h4><span style="font-family:Arial,Helvetica,sans-serif;">I WANT MORE INFO ABOUT frog's APPROACH TO REMOTE COLLABORATION</span></h4>
+
+		
+
+		
+			<p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="95412_247228pi_95412_247228">First name</label>
+				
+
+				<input type="text" name="95412_247228pi_95412_247228" id="95412_247228pi_95412_247228" value="" class="text" size="30" maxlength="40" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247228pi_95412_247228" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="95412_247231pi_95412_247231">Last name</label>
+				
+
+				<input type="text" name="95412_247231pi_95412_247231" id="95412_247231pi_95412_247231" value="" class="text" size="30" maxlength="80" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247231pi_95412_247231" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="95412_247234pi_95412_247234">Work Email</label>
+				
+
+				<input type="text" name="95412_247234pi_95412_247234" id="95412_247234pi_95412_247234" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247234pi_95412_247234" style="display:none"></div>
+			
+		
+			<p class="form-field  company pd-text required    ">
+				
+					<label class="field-label" for="95412_247237pi_95412_247237">Company name</label>
+				
+
+				<input type="text" name="95412_247237pi_95412_247237" id="95412_247237pi_95412_247237" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247237pi_95412_247237" style="display:none"></div>
+			
+		
+			<p class="form-field  Sector pd-text required    ">
+				
+					<label class="field-label" for="95412_247240pi_95412_247240">Sector</label>
+				
+
+				<input type="text" name="95412_247240pi_95412_247240" id="95412_247240pi_95412_247240" value="" class="text" size="30" maxlength="65535" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247240pi_95412_247240" style="display:none"></div>
+			
+		
+			<p class="form-field  job_title pd-text required    ">
+				
+					<label class="field-label" for="95412_247243pi_95412_247243">Job title</label>
+				
+
+				<input type="text" name="95412_247243pi_95412_247243" id="95412_247243pi_95412_247243" value="" class="text" size="30" maxlength="128" onchange="" onfocus=""></p>
+			<div id="error_for_95412_247243pi_95412_247243" style="display:none"></div>
+			
+		
+			<p class="form-field  country pd-select required    ">
+				
+					<label class="field-label" for="95412_247246pi_95412_247246">Country/Region</label>
+				
+
+				<select name="95412_247246pi_95412_247246" id="95412_247246pi_95412_247246" class="select" onchange=""><option value="1975999" selected></option><option value="1976002">United States</option><option value="1976005">Canada</option><option value="1976008">Afghanistan</option><option value="1976011">Albania</option><option value="1976014">Algeria</option><option value="1976017">American Samoa</option><option value="1976020">Andorra</option><option value="1976023">Angola</option><option value="1976026">Anguilla</option><option value="1976029">Antarctica</option><option value="1976032">Antigua and Barbuda</option><option value="1976035">Argentina</option><option value="1976038">Armenia</option><option value="1976041">Aruba</option><option value="1976044">Australia</option><option value="1976047">Austria</option><option value="1976050">Azerbaijan</option><option value="1976053">Bahamas</option><option value="1976056">Bahrain</option><option value="1976059">Bangladesh</option><option value="1976062">Barbados</option><option value="1976065">Belarus</option><option value="1976068">Belgium</option><option value="1976071">Belize</option><option value="1976074">Benin</option><option value="1976077">Bermuda</option><option value="1976080">Bhutan</option><option value="1976083">Bolivia</option><option value="1976086">Bosnia and Herzegovina</option><option value="1976089">Botswana</option><option value="1976092">Brazil</option><option value="1976095">British Indian Ocean Territory</option><option value="1976098">British Virgin Islands</option><option value="1976101">Brunei</option><option value="1976104">Bulgaria</option><option value="1976107">Burkina Faso</option><option value="1976110">Burundi</option><option value="1976113">Cambodia</option><option value="1976116">Cameroon</option><option value="1976119">Cape Verde</option><option value="1976122">Cayman Islands</option><option value="1976125">Central African Republic</option><option value="1976128">Chad</option><option value="1976131">Chile</option><option value="1976134">China</option><option value="1976137">Christmas Island</option><option value="1976140">Cocos (Keeling) Islands</option><option value="1976143">Colombia</option><option value="1976146">Comoros</option><option value="1976149">Congo</option><option value="1976152">Cook Islands</option><option value="1976155">Costa Rica</option><option value="1976158">Croatia</option><option value="1976161">Cuba</option><option value="1976164">Curaçao</option><option value="1976167">Cyprus</option><option value="1976170">Czech Republic</option><option value="1976173">Côte d’Ivoire</option><option value="1976176">Democratic Republic of the Congo</option><option value="1976179">Denmark</option><option value="1976182">Djibouti</option><option value="1976185">Dominica</option><option value="1976188">Dominican Republic</option><option value="1976191">Ecuador</option><option value="1976194">Egypt</option><option value="1976197">El Salvador</option><option value="1976200">Equatorial Guinea</option><option value="1976203">Eritrea</option><option value="1976206">Estonia</option><option value="1976209">Ethiopia</option><option value="1976212">Falkland Islands</option><option value="1976215">Faroe Islands</option><option value="1976218">Fiji</option><option value="1976221">Finland</option><option value="1976224">France</option><option value="1976227">French Guiana</option><option value="1976230">French Polynesia</option><option value="1976233">French Southern Territories</option><option value="1976236">Gabon</option><option value="1976239">Gambia</option><option value="1976242">Georgia</option><option value="1976245">Germany</option><option value="1976248">Ghana</option><option value="1976251">Gibraltar</option><option value="1976254">Greece</option><option value="1976257">Greenland</option><option value="1976260">Grenada</option><option value="1976263">Guadeloupe</option><option value="1976266">Guam</option><option value="1976269">Guatemala</option><option value="1976272">Guernsey</option><option value="1976275">Guinea</option><option value="1976278">Guinea-Bissau</option><option value="1976281">Guyana</option><option value="1976284">Haiti</option><option value="1976287">Honduras</option><option value="1976290">Hong Kong S.A.R., China</option><option value="1976293">Hungary</option><option value="1976296">Iceland</option><option value="1976299">India</option><option value="1976302">Indonesia</option><option value="1976305">Iran</option><option value="1976308">Iraq</option><option value="1976311">Ireland</option><option value="1976314">Isle of Man</option><option value="1976317">Israel</option><option value="1976320">Italy</option><option value="1976323">Jamaica</option><option value="1976326">Japan</option><option value="1976329">Jersey</option><option value="1976332">Jordan</option><option value="1976335">Kazakhstan</option><option value="1976338">Kenya</option><option value="1976341">Kiribati</option><option value="1976344">Kuwait</option><option value="1976347">Kyrgyzstan</option><option value="1976350">Laos</option><option value="1976353">Latvia</option><option value="1976356">Lebanon</option><option value="1976359">Lesotho</option><option value="1976362">Liberia</option><option value="1976365">Libya</option><option value="1976368">Liechtenstein</option><option value="1976371">Lithuania</option><option value="1976374">Luxembourg</option><option value="1976377">Macao S.A.R., China</option><option value="1976380">Macedonia</option><option value="1976383">Madagascar</option><option value="1976386">Malawi</option><option value="1976389">Malaysia</option><option value="1976392">Maldives</option><option value="1976395">Mali</option><option value="1976398">Malta</option><option value="1976401">Marshall Islands</option><option value="1976404">Martinique</option><option value="1976407">Mauritania</option><option value="1976410">Mauritius</option><option value="1976413">Mayotte</option><option value="1976416">Mexico</option><option value="1976419">Micronesia</option><option value="1976422">Moldova</option><option value="1976425">Monaco</option><option value="1976428">Mongolia</option><option value="1976431">Montenegro</option><option value="1976434">Montserrat</option><option value="1976437">Morocco</option><option value="1976440">Mozambique</option><option value="1976443">Myanmar</option><option value="1976446">Namibia</option><option value="1976449">Nauru</option><option value="1976452">Nepal</option><option value="1976455">Netherlands</option><option value="1976458">New Caledonia</option><option value="1976461">New Zealand</option><option value="1976464">Nicaragua</option><option value="1976467">Niger</option><option value="1976470">Nigeria</option><option value="1976473">Niue</option><option value="1976476">Norfolk Island</option><option value="1976479">North Korea</option><option value="1976482">Northern Mariana Islands</option><option value="1976485">Norway</option><option value="1976488">Oman</option><option value="1976491">Pakistan</option><option value="1976494">Palau</option><option value="1976497">Palestinian Territory</option><option value="1976500">Panama</option><option value="1976503">Papua New Guinea</option><option value="1976506">Paraguay</option><option value="1976509">Peru</option><option value="1976512">Philippines</option><option value="1976515">Pitcairn</option><option value="1976518">Poland</option><option value="1976521">Portugal</option><option value="1976524">Puerto Rico</option><option value="1976527">Qatar</option><option value="1976530">Romania</option><option value="1976533">Russia</option><option value="1976536">Rwanda</option><option value="1976539">Réunion</option><option value="1976542">Saint Barthélemy</option><option value="1976545">Saint Helena</option><option value="1976548">Saint Kitts and Nevis</option><option value="1976551">Saint Lucia</option><option value="1976554">Saint Pierre and Miquelon</option><option value="1976557">Saint Vincent and the Grenadines</option><option value="1976560">Samoa</option><option value="1976563">San Marino</option><option value="1976566">Sao Tome and Principe</option><option value="1976569">Saudi Arabia</option><option value="1976572">Senegal</option><option value="1976575">Serbia</option><option value="1976578">Seychelles</option><option value="1976581">Sierra Leone</option><option value="1976584">Singapore</option><option value="1976587">Slovakia</option><option value="1976590">Slovenia</option><option value="1976593">Solomon Islands</option><option value="1976596">Somalia</option><option value="1976599">South Africa</option><option value="1976602">South Korea</option><option value="1976605">South Sudan</option><option value="1976608">Spain</option><option value="1976611">Sri Lanka</option><option value="1976614">Sudan</option><option value="1976617">Suriname</option><option value="1976620">Svalbard and Jan Mayen</option><option value="1976623">Swaziland</option><option value="1976626">Sweden</option><option value="1976629">Switzerland</option><option value="1976632">Syria</option><option value="1976635">Taiwan</option><option value="1976638">Tajikistan</option><option value="1976641">Tanzania</option><option value="1976644">Thailand</option><option value="1976647">Timor-Leste</option><option value="1976650">Togo</option><option value="1976653">Tokelau</option><option value="1976656">Tonga</option><option value="1976659">Trinidad and Tobago</option><option value="1976662">Tunisia</option><option value="1976665">Turkey</option><option value="1976668">Turkmenistan</option><option value="1976671">Turks and Caicos Islands</option><option value="1976674">Tuvalu</option><option value="1976677">U.S. Virgin Islands</option><option value="1976680">Uganda</option><option value="1976683">Ukraine</option><option value="1976686">United Arab Emirates</option><option value="1976689">United Kingdom</option><option value="1976692">United States Minor Outlying Islands</option><option value="1976695">Uruguay</option><option value="1976698">Uzbekistan</option><option value="1976701">Vanuatu</option><option value="1976704">Vatican</option><option value="1976707">Venezuela</option><option value="1976710">Viet Nam</option><option value="1976713">Wallis and Futuna</option><option value="1976716">Western Sahara</option><option value="1976719">Yemen</option><option value="1976722">Zambia</option><option value="1976725">Zimbabwe</option></select></p>
+			<div id="error_for_95412_247246pi_95412_247246" style="display:none"></div>
+			
+		
+			<p class="form-field  Terms___Condition pd-checkbox required  no-label  ">
+				
+
+				<span class="value"><span><input type="checkbox" name="95412_247249pi_95412_247249_1976728" id="95412_247249pi_95412_247249_1976728" value="1976728" onchange=""><label class="inline" for="95412_247249pi_95412_247249_1976728">*I agree to frog collecting and processing my personal data to allow me to receive information on frog services.</label></span></span>
+				
+			</p>
+			<div id="error_for_95412_247249pi_95412_247249" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"></p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="☃"><p class="submit">
+			<input type="submit" accesskey="s" value="TELL ME MORE"></p>
+	<p><span style="font-size:18px;">For further information, please see our <a href="https://www.capgemini.com/privacy-notice/" target="_blank"><span style="color:#000000; text-decoration: underline;">Privacy Notice</span></a>.</span></p>
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script><input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script></div>
+                    </div>
+                     
+
+                </div><!-- row -->
+
+
+
+        </div><!-- row vpadding -->
+    </div><!--/.container-->
+
+    <div class="black clearfix">
+        <div class="container vpadding">
+            <div class="row">
+                <footer><div class="col-md-12 row clearfix">
+                    <div class="col-sm-3 vpadding clearfix">
+                        <div class="editable logo-footer" style="text-align:center;">
+                             <img src="../../l/95412/2022-05-02/6ddyf3/95412/1651514950PnNGjwb2/logo_footer_2022_500.png" alt="frog" pardot-region="logo-footer" pardot-region-type="image" width="165"></div>
+
+                    </div>
+                    <div class="col-sm-9 vpadding clearfix">
+                        <div class="social">
+                          <div class="editable" pardot-region="footer-content">
+                            <p>frog is a leading global creative consultancy, part of Capgemini Invent. We challenge the status quo to craft and build transformative human experiences that win hearts and move markets. Partnering with passionate leaders and visionary entrepreneurs, we apply creativity, strategy, design and data to re-invent businesses, drive growth and orchestrate customer centric transformation. Together we strive to shape a regenerative future that is both sustainable and inclusive for businesses, people and planet.</p>
+                        </div>
+
+                          <p><a href="../../../frog.co/index.html" target="_blank" style="text-decoration: underline;">frog.co</a></p>
+
+                          <p class="frog-social">
+                            <a href="https://twitter.com/frogdesign" target="_blank"><img src="../../Social-Media-W-Twitter.png"></a>
+                            <a href="https://www.facebook.com/pages/frog-design/5612622846" target="_blank"><img src="../../Social-Media-W-Facebook.png"></a>
+                            <a href="https://www.linkedin.com/company/163904" target="_blank"><img src="../../Social-Media-W-Linkedin.png"></a>
+                            <a href="https://vimeo.com/frog" target="_blank"><img src="../../Social-Media-W-Vimeo.png"></a>
+                            <a href="https://instagram.com/frog_design" target="_blank"><img src="../../Social-Media-W-Instagram.png"></a>
+                         </p>
+                         <p class="legal-frog">©2026 frog, part of Capgemini Invent</p>
+                         <p class="legal-frog">
+                            <a href="https://www.capgemini.com/cookie-policy/" target="_blank">Cookie Policy</a> |  <a href="https://www.capgemini.com/privacy-policy/" target="_blank">Privacy Policy</a> | <a href="https://www.capgemini.com/terms-of-use/" target="_blank">Terms of Use</a>
+                        </p>
+                          
+                        </div><!-- social -->
+                    </div>
+                     
+
+                </div>
+
+                </footer></div>
+        </div>
+    </div><!-- grey -->
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script><script>
+
+    /* --------------------------------------------------------------
+        FUNCTIONS
+    ----------------------------------------------------------------- */
+        /**
+         * Replace all occurences of https://simplesharebuttons.com in the
+         * social sharing list with the url of this page, and all occurrence
+         * of "Check this out" with the page title
+         */
+            $(".social-list a").each(function() {
+                // get values
+                var thisPage = window.location.href;
+                var url = $(this).attr('href');
+
+                // get title of this page
+                var title = $(document).find("title").text();
+              
+                // replace values
+                url = url.replace("http://www.pardot.com", thisPage);
+                url = url.replace("template-title", title);
+
+                //update value of the link anchor
+                $(this).attr('href', url);
+            });
+
+        /**
+         * make sure callout box matches height of image it is beside
+         */
+            function checkSize(){
+                /**
+                 * Determine if on mobile screen by checking value of a CSS value
+                 * If elements with .pull-right class is set to float none, then we are 
+                 * on mobile screen. 
+                 * Only apply the equal height script if we are not on mobile screen
+                 */
+                if($('.pull-right').css('float') != "none"){
+                  // Get an array of all element heights
+                  var matchHeights = $('.feature-img img').height();
+                  // Set each height to the max height
+                  $('.equal_height').height(matchHeights);
+                } else {
+                    $('.equal_height').height('auto');
+                }
+            }
+
+            setTimeout( function() {
+                //do something special
+            }, 5000);
+
+            $( document ).ready(function() {
+                setTimeout( function() {
+                    checkSize();
+                }, 2000);
+            });
+        
+            // run test on resize of the window
+            $(window).resize(checkSize);
+            $('.feature-img img').load(function() {  
+              checkSize();  
+            });  
+
+        /**
+         * Pardot label alignment fix
+         */
+            pardot.$(function() {
+                var $ = window.pardot.$;
+                // Add label-left class to the <form> if label alignment is set to Default or Left in form styling
+                var $labelAlignment = $('#pardot-form .field-label').css('float');
+                if ($labelAlignment == 'left') { $('#pardot-form').addClass('label-left'); }
+            });
+
+    </script><script type="“text/javascript”">
+_linkedin_partner_id = “5450970”;
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="“text/javascript”">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName(“script”)[0];
+var b = document.createElement(“script”);
+b.type = “text/javascript”;b.async = true;
+b.src = “https://snap.licdn.com/li.lms-analytics/insight.min.js”;
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script><noscript>
+<img height="“1”" width='“1"' style="“display:none;”" alt="“”" src="../../“https%253A/px.ads.linkedin.com/collect/index.html@pid=5450970&amp;fmt=gif”.html"></noscript>
+ </body></html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+		<base href="" >
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title></title>
+		
+        <meta name="googlebot" content="noindex, nofollow">
+        <meta name="robots" content="noindex">
+        <link rel="shortcut icon" type="image/png" href="../2022-05-02/6ddz1d/95412/16515239912M1beA2W/frog_favicon.png">
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<style>
+		@font-face {
+    font-family: "GT America";
+    src: url("../../../../www.frog.co/fonts/GT-America/GT-America-Standard-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "GT America";
+    src: url("../../../../www.frog.co/fonts/GT-America/GT-America-Standard-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Quarto Light";
+    font-display: swap;
+    src: url("https://www.frog.co/fonts/Quarto/Quarto-Light.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Quarto Light Italic";
+    font-display: swap;
+    src: url("https://www.frog.co/fonts/Quarto/Quarto-LightItalic.woff2") format("woff2");
+  }
+             #pardot-form {
+                font-family: "GT America", source-han-sans-simplified-c, sans-serif !important;
+                font-size: 16px;
+                color: #000000;
+                margin: 1px;
+                padding: 0;
+            }
+            form.form p.required label, form.form span.required label {
+                background: none !important;
+            }
+            form.form label {
+                margin: 0;
+            }
+            form.form input.text {
+                border: none !important;
+                width: 100% !important;
+            }
+            form.form p label, form.form select, form.form textarea.standard {
+                text-align: left !important;
+                width: 100% !important;
+                /*height: 50px;*/
+                font-weight: 400 !important;
+            }
+            textarea.standard {
+                height: 60px;
+            }
+            form.form span.value, form.form p.no-label {
+                margin-left: 0 !important;
+            }
+            form.form p label.inline {
+                color: #000000 !important;
+                font-size: 16px !important;
+            }
+            input[type="submit"] {
+                background-color: black;
+                color: #fff;
+                width: 100%;
+                font-family: "GT America", source-han-sans-simplified-c, sans-serif !important;
+            }
+            input[type=checkbox], input[type=radio] {
+                /*margin: 4px 5px 0;*/
+            }
+            form.form p.submit {
+                padding: 0;
+                margin: 24px 0 0;
+            }
+            form.form p.submit input {
+                padding: 5px 12px !important;
+            }
+            p.submit input {
+                font-size: 24px;
+                height: 60px;
+                border: 2px solid black;
+            }
+            p.privacy {
+                padding-top: 24px;
+                margin: 0;
+                font-size: 16px;
+            }
+            p.privacy a {
+                text-decoration: none;
+                color: inherit;
+                border-bottom: 1px solid black;
+            }
+            #pardot-form input[type="submit"]:hover {
+                background-color: #ffffff;
+                color: #000000;
+            }
+            /* FROG CUSTOM STYLES >>> */
+            #pardot-form::after {
+                content: url('../../../whiteTick.svg');
+                position: fixed;
+                top: -500px;
+                left: -500px;
+                z-index: -500;
+            }
+            #pardot-form input {
+                outline: 0;
+            }
+            #pardot-form textarea {
+                border: 0;
+                outline: 0;
+            }
+            #pardot-form select {
+                background-color: transparent;
+                border: 0;
+                height: 1.4em;
+            }
+            #pardot-form > *.form-field:not(.no-label) {
+                border: 1px solid black;
+                margin: 24px 0 0;
+                padding: 6px 16px;
+            }
+            #pardot-form > *.form-field.no-label {
+                margin: 24px 0 0;
+            }
+            #pardot-form > p.form-field.first_name {
+                margin-top: 0;
+            }
+            #pardot-form > p.form-field.Purpose_of_Contact.pd-select {
+                margin: 24px 0;
+            }
+            #pardot-form label.field-label {
+                color: #929292;
+                font-size: 14px;
+            }
+            #pardot-form label.field-label:before {
+                content: '*';
+                margin-right: 4px;
+            }
+            #pardot-form p.pd-text {
+                font-size: 16px;
+            }
+            #pardot-form p.pd-text > input {
+                height: 1.4em;
+            }
+            #pardot-form p.pd-checkbox input[type='checkbox'] {
+                display: none;
+            }
+            #pardot-form p.pd-checkbox label {
+                display: block;
+                height: auto;
+            }
+            p.form-field.phone.pd-text label.field-label::before {
+                display: none;
+            }
+            /*  CUSTOM CHECKBOX */
+            #pardot-form p.pd-checkbox input[type='checkbox'] + label {
+                display: flex;
+                cursor: pointer;
+            }
+            #pardot-form p.pd-checkbox input[type='checkbox'] + label::before {
+                display: inline-flex;
+                border: 2px solid black;
+                content: '';
+                min-width: 24px;
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+                transition: background-color 350ms, opacity 250ms;
+            }
+            /* NOT CHECKED (DEFAULT) */
+            #pardot-form p.pd-checkbox input[type='checkbox']:not(:checked) + label::before {
+                background-image: url('../../../whiteTick.svg'); /* Preload image */
+                background-size: 0;
+            }
+            /* CHECKED */
+            #pardot-form p.pd-checkbox input[type='checkbox']:checked + label::before {
+                background-color: black;
+                background-image: url('../../../whiteTick.svg');
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+            #pardot-form input[type='submit'] {
+                transition: background-color 250ms,  color 250ms;
+            }
+            /* ERRORS */
+            #pardot-form p.errors {
+                display: none;
+            }
+            #pardot-form p.error.no-label:not(.form-field) {
+                font-size: 14px;
+                color: red;
+            }
+            @media only screen and (min-width: 768px)  {
+                #pardot-form {
+                    font-size: 20px;
+                }
+                #pardot-form p.pd-text {
+                    font-size: 20px;
+                }
+                form.form p label.inline {
+                    font-size: 20px;
+                }
+            }
+
+            /* <<< FROG CUSTOM STYLES */
+        </style>
+	<script type="text/javascript" src="../../../js/piUtils.js@ver=2021-09-20"></script><script type="text/javascript">
+piAId = '96412';
+piCId = '161604';
+piHostname = 'pi.pardot.com';
+if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head>
+	<body>
+		<form accept-charset="UTF-8" method="post" action="7tx9ld.html" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style>
+
+
+
+
+
+	
+		
+
+		
+			<p class="form-field  first_name pd-text required    ">
+				
+					<label class="field-label" for="95412_312254pi_95412_312254">First Name</label>
+				
+
+				<input type="text" name="95412_312254pi_95412_312254" id="95412_312254pi_95412_312254" value="" class="text" size="30" maxlength="40" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_95412_312254pi_95412_312254" style="display:none"></div>
+			
+		
+			<p class="form-field  last_name pd-text required    ">
+				
+					<label class="field-label" for="95412_312257pi_95412_312257">Last Name</label>
+				
+
+				<input type="text" name="95412_312257pi_95412_312257" id="95412_312257pi_95412_312257" value="" class="text" size="30" maxlength="80" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_95412_312257pi_95412_312257" style="display:none"></div>
+			
+		
+			<p class="form-field  country pd-select required    ">
+				
+					<label class="field-label" for="95412_312260pi_95412_312260">Country</label>
+				
+
+				<select name="95412_312260pi_95412_312260" id="95412_312260pi_95412_312260" class="select" onchange=""><option value="2587064" selected="selected"></option>
+<option value="2587067">United States</option>
+<option value="2587070">Canada</option>
+<option value="2587073">Afghanistan</option>
+<option value="2587076">Albania</option>
+<option value="2587079">Algeria</option>
+<option value="2587082">American Samoa</option>
+<option value="2587085">Andorra</option>
+<option value="2587088">Angola</option>
+<option value="2587091">Anguilla</option>
+<option value="2587094">Antarctica</option>
+<option value="2587097">Antigua and Barbuda</option>
+<option value="2587100">Argentina</option>
+<option value="2587103">Armenia</option>
+<option value="2587106">Aruba</option>
+<option value="2587109">Australia</option>
+<option value="2587112">Austria</option>
+<option value="2587115">Azerbaijan</option>
+<option value="2587118">Bahamas</option>
+<option value="2587121">Bahrain</option>
+<option value="2587124">Bangladesh</option>
+<option value="2587127">Barbados</option>
+<option value="2587130">Belarus</option>
+<option value="2587133">Belgium</option>
+<option value="2587136">Belize</option>
+<option value="2587139">Benin</option>
+<option value="2587142">Bermuda</option>
+<option value="2587145">Bhutan</option>
+<option value="2587148">Bolivia</option>
+<option value="2587151">Bosnia and Herzegovina</option>
+<option value="2587154">Botswana</option>
+<option value="2587157">Brazil</option>
+<option value="2587160">British Indian Ocean Territory</option>
+<option value="2587163">British Virgin Islands</option>
+<option value="2587166">Brunei</option>
+<option value="2587169">Bulgaria</option>
+<option value="2587172">Burkina Faso</option>
+<option value="2587175">Burundi</option>
+<option value="2587178">Cambodia</option>
+<option value="2587181">Cameroon</option>
+<option value="2587184">Cape Verde</option>
+<option value="2587187">Cayman Islands</option>
+<option value="2587190">Central African Republic</option>
+<option value="2587193">Chad</option>
+<option value="2587196">Chile</option>
+<option value="2587199">China</option>
+<option value="2587202">Christmas Island</option>
+<option value="2587205">Cocos (Keeling) Islands</option>
+<option value="2587208">Colombia</option>
+<option value="2587211">Comoros</option>
+<option value="2587214">Congo</option>
+<option value="2587217">Cook Islands</option>
+<option value="2587220">Costa Rica</option>
+<option value="2587223">Croatia</option>
+<option value="2587226">Cuba</option>
+<option value="2587229">Cura&ccedil;ao</option>
+<option value="2587232">Cyprus</option>
+<option value="2587235">Czech Republic</option>
+<option value="2587238">C&ocirc;te d&rsquo;Ivoire</option>
+<option value="2587241">Democratic Republic of the Congo</option>
+<option value="2587244">Denmark</option>
+<option value="2587247">Djibouti</option>
+<option value="2587250">Dominica</option>
+<option value="2587253">Dominican Republic</option>
+<option value="2587256">Ecuador</option>
+<option value="2587259">Egypt</option>
+<option value="2587262">El Salvador</option>
+<option value="2587265">Equatorial Guinea</option>
+<option value="2587268">Eritrea</option>
+<option value="2587271">Estonia</option>
+<option value="2587274">Ethiopia</option>
+<option value="2587277">Falkland Islands</option>
+<option value="2587280">Faroe Islands</option>
+<option value="2587283">Fiji</option>
+<option value="2587286">Finland</option>
+<option value="2587289">France</option>
+<option value="2587292">French Guiana</option>
+<option value="2587295">French Polynesia</option>
+<option value="2587298">French Southern Territories</option>
+<option value="2587301">Gabon</option>
+<option value="2587304">Gambia</option>
+<option value="2587307">Georgia</option>
+<option value="2587310">Germany</option>
+<option value="2587313">Ghana</option>
+<option value="2587316">Gibraltar</option>
+<option value="2587319">Greece</option>
+<option value="2587322">Greenland</option>
+<option value="2587325">Grenada</option>
+<option value="2587328">Guadeloupe</option>
+<option value="2587331">Guam</option>
+<option value="2587334">Guatemala</option>
+<option value="2587337">Guernsey</option>
+<option value="2587340">Guinea</option>
+<option value="2587343">Guinea-Bissau</option>
+<option value="2587346">Guyana</option>
+<option value="2587349">Haiti</option>
+<option value="2587352">Honduras</option>
+<option value="2587355">Hong Kong S.A.R., China</option>
+<option value="2587358">Hungary</option>
+<option value="2587361">Iceland</option>
+<option value="2587364">India</option>
+<option value="2587367">Indonesia</option>
+<option value="2587370">Iran</option>
+<option value="2587373">Iraq</option>
+<option value="2587376">Ireland</option>
+<option value="2587379">Isle of Man</option>
+<option value="2587382">Israel</option>
+<option value="2587385">Italy</option>
+<option value="2587388">Jamaica</option>
+<option value="2587391">Japan</option>
+<option value="2587394">Jersey</option>
+<option value="2587397">Jordan</option>
+<option value="2587400">Kazakhstan</option>
+<option value="2587403">Kenya</option>
+<option value="2587406">Kiribati</option>
+<option value="2587409">Kuwait</option>
+<option value="2587412">Kyrgyzstan</option>
+<option value="2587415">Laos</option>
+<option value="2587418">Latvia</option>
+<option value="2587421">Lebanon</option>
+<option value="2587424">Lesotho</option>
+<option value="2587427">Liberia</option>
+<option value="2587430">Libya</option>
+<option value="2587433">Liechtenstein</option>
+<option value="2587436">Lithuania</option>
+<option value="2587439">Luxembourg</option>
+<option value="2587442">Macao S.A.R., China</option>
+<option value="2587445">Macedonia</option>
+<option value="2587448">Madagascar</option>
+<option value="2587451">Malawi</option>
+<option value="2587454">Malaysia</option>
+<option value="2587457">Maldives</option>
+<option value="2587460">Mali</option>
+<option value="2587463">Malta</option>
+<option value="2587466">Marshall Islands</option>
+<option value="2587469">Martinique</option>
+<option value="2587472">Mauritania</option>
+<option value="2587475">Mauritius</option>
+<option value="2587478">Mayotte</option>
+<option value="2587481">Mexico</option>
+<option value="2587484">Micronesia</option>
+<option value="2587487">Moldova</option>
+<option value="2587490">Monaco</option>
+<option value="2587493">Mongolia</option>
+<option value="2587496">Montenegro</option>
+<option value="2587499">Montserrat</option>
+<option value="2587502">Morocco</option>
+<option value="2587505">Mozambique</option>
+<option value="2587508">Myanmar</option>
+<option value="2587511">Namibia</option>
+<option value="2587514">Nauru</option>
+<option value="2587517">Nepal</option>
+<option value="2587520">Netherlands</option>
+<option value="2587523">New Caledonia</option>
+<option value="2587526">New Zealand</option>
+<option value="2587529">Nicaragua</option>
+<option value="2587532">Niger</option>
+<option value="2587535">Nigeria</option>
+<option value="2587538">Niue</option>
+<option value="2587541">Norfolk Island</option>
+<option value="2587544">North Korea</option>
+<option value="2587547">Northern Mariana Islands</option>
+<option value="2587550">Norway</option>
+<option value="2587553">Oman</option>
+<option value="2587556">Pakistan</option>
+<option value="2587559">Palau</option>
+<option value="2587562">Palestinian Territory</option>
+<option value="2587565">Panama</option>
+<option value="2587568">Papua New Guinea</option>
+<option value="2587571">Paraguay</option>
+<option value="2587574">Peru</option>
+<option value="2587577">Philippines</option>
+<option value="2587580">Pitcairn</option>
+<option value="2587583">Poland</option>
+<option value="2587586">Portugal</option>
+<option value="2587589">Puerto Rico</option>
+<option value="2587592">Qatar</option>
+<option value="2587595">Romania</option>
+<option value="2587598">Russia</option>
+<option value="2587601">Rwanda</option>
+<option value="2587604">R&eacute;union</option>
+<option value="2587607">Saint Barth&eacute;lemy</option>
+<option value="2587610">Saint Helena</option>
+<option value="2587613">Saint Kitts and Nevis</option>
+<option value="2587616">Saint Lucia</option>
+<option value="2587619">Saint Pierre and Miquelon</option>
+<option value="2587622">Saint Vincent and the Grenadines</option>
+<option value="2587625">Samoa</option>
+<option value="2587628">San Marino</option>
+<option value="2587631">Sao Tome and Principe</option>
+<option value="2587634">Saudi Arabia</option>
+<option value="2587637">Senegal</option>
+<option value="2587640">Serbia</option>
+<option value="2587643">Seychelles</option>
+<option value="2587646">Sierra Leone</option>
+<option value="2587649">Singapore</option>
+<option value="2587652">Slovakia</option>
+<option value="2587655">Slovenia</option>
+<option value="2587658">Solomon Islands</option>
+<option value="2587661">Somalia</option>
+<option value="2587664">South Africa</option>
+<option value="2587667">South Korea</option>
+<option value="2587670">South Sudan</option>
+<option value="2587673">Spain</option>
+<option value="2587676">Sri Lanka</option>
+<option value="2587679">Sudan</option>
+<option value="2587682">Suriname</option>
+<option value="2587685">Svalbard and Jan Mayen</option>
+<option value="2587688">Swaziland</option>
+<option value="2587691">Sweden</option>
+<option value="2587694">Switzerland</option>
+<option value="2587697">Syria</option>
+<option value="2587700">Taiwan</option>
+<option value="2587703">Tajikistan</option>
+<option value="2587706">Tanzania</option>
+<option value="2587709">Thailand</option>
+<option value="2587712">Timor-Leste</option>
+<option value="2587715">Togo</option>
+<option value="2587718">Tokelau</option>
+<option value="2587721">Tonga</option>
+<option value="2587724">Trinidad and Tobago</option>
+<option value="2587727">Tunisia</option>
+<option value="2587730">Turkey</option>
+<option value="2587733">Turkmenistan</option>
+<option value="2587736">Turks and Caicos Islands</option>
+<option value="2587739">Tuvalu</option>
+<option value="2587742">U.S. Virgin Islands</option>
+<option value="2587745">Uganda</option>
+<option value="2587748">Ukraine</option>
+<option value="2587751">United Arab Emirates</option>
+<option value="2587754">United Kingdom</option>
+<option value="2587757">United States Minor Outlying Islands</option>
+<option value="2587760">Uruguay</option>
+<option value="2587763">Uzbekistan</option>
+<option value="2587766">Vanuatu</option>
+<option value="2587769">Vatican</option>
+<option value="2587772">Venezuela</option>
+<option value="2587775">Viet Nam</option>
+<option value="2587778">Wallis and Futuna</option>
+<option value="2587781">Western Sahara</option>
+<option value="2587784">Yemen</option>
+<option value="2587787">Zambia</option>
+<option value="2587790">Zimbabwe</option>
+</select>
+				
+			</p>
+			<div id="error_for_95412_312260pi_95412_312260" style="display:none"></div>
+			
+		
+			<p class="form-field  company pd-text required    ">
+				
+					<label class="field-label" for="95412_312263pi_95412_312263">Company</label>
+				
+
+				<input type="text" name="95412_312263pi_95412_312263" id="95412_312263pi_95412_312263" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_95412_312263pi_95412_312263" style="display:none"></div>
+			
+		
+			<p class="form-field  job_title pd-text required    ">
+				
+					<label class="field-label" for="95412_312266pi_95412_312266">Job Title</label>
+				
+
+				<input type="text" name="95412_312266pi_95412_312266" id="95412_312266pi_95412_312266" value="" class="text" size="30" maxlength="128" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_95412_312266pi_95412_312266" style="display:none"></div>
+			
+		
+			<p class="form-field  email pd-text required    ">
+				
+					<label class="field-label" for="95412_312269pi_95412_312269">Work Email</label>
+				
+
+				<input type="text" name="95412_312269pi_95412_312269" id="95412_312269pi_95412_312269" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+				
+			</p>
+			<div id="error_for_95412_312269pi_95412_312269" style="display:none"></div>
+			
+		
+			<p class="form-field  Terms___Condition pd-checkbox required  no-label  ">
+				
+
+				<span class="value"><span><input type="checkbox" name="95412_312272pi_95412_312272_2587793" id="95412_312272pi_95412_312272_2587793" value="2587793" onchange="" /><label class="inline" for="95412_312272pi_95412_312272_2587793">*I agree to frog collecting and processing my personal data to allow me to receive information on frog services.</label></span></span>
+				
+			</p>
+			<div id="error_for_95412_312272pi_95412_312272" style="display:none"></div>
+			
+		
+
+		
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"/>
+	</p>
+		
+
+		<!-- forces IE5-8 to correctly submit UTF8 content  -->
+		<input name="_utf8" type="hidden" value="&#9731;" />
+
+		<p class="submit">
+			<input type="submit" accesskey="s" value="Download the full report" />
+		</p>
+	<p>Please review our <a href="https://www.capgemini.com/privacy-notice/" target="_blank"><span style="color:#000000; text-decoration: underline;">Privacy Notice</span></a>.</p>
+
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="" /></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script>
+	</body>
+</html>
