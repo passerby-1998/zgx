@@ -17,49 +17,52 @@
     }
     header @html Cache-Control "no-cache, no-store, must-revalidate"
 
-    # try_files: 先尝试精确文件，再尝试 .html 后缀，最后回退 index.html
-    try_files {path} {path}.html /index.html
+    # Next.js 静态导出路由:
+    #   /work/some-article  -> /work/some-article/index.html (目录式)
+    #   /careers            -> /careers.html                 (扁平式)
+    #   /                   -> /index.html                   (首页)
+    try_files {path} {path}/index.html {path}.html /index.html
     file_server
 
     # WordPress 媒体资源 (原 wp.frog.co)
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
     # Pardot 表单页 (原 go.frog.co)
     handle_path /go/* {
         root * /var/www/website/zgx/go.frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
     # frog.co 简站 (原 frog.co)
     handle_path /frog/* {
         root * /var/www/website/zgx/frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
     # Cannes 活动站 (原 cannes.frog.co)
     handle_path /cannes/* {
         root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
     # 可持续发展卡站 (原 cardsforsustainability.frog.co)
     handle_path /cards/* {
         root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
     # 米兰设计周站 (原 milandesignweek.frog.co)
     handle_path /milan/* {
         root * /var/www/website/zgx/milandesignweek.frog.co
-        try_files {path} /index.html
+        try_files {path} {path}/index.html {path}.html /index.html
         file_server
     }
 
