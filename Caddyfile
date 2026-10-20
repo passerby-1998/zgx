@@ -1,7 +1,8 @@
-# Caddy 配置文件 - 部署到 127.0.0.1
+# Caddy 配置文件 - 监听所有接口的80端口 (HTTP)
 # 放置位置: /etc/caddy/Caddyfile
+# 访问地址: http://8.218.15.246/
 
-127.0.0.1 {
+:80 {
     # 主站点 www.frog.co 作为根站点
     root * /var/www/website/zgx/www.frog.co
     encode gzip
