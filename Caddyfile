@@ -1,0 +1,71 @@
+# Caddy 配置文件 - 部署到 127.0.0.1
+# 放置位置: /etc/caddy/Caddyfile
+
+127.0.0.1 {
+    # 主站点 www.frog.co 作为根站点
+    root * /var/www/website/zgx/www.frog.co
+    encode gzip
+
+    # 静态资源长期缓存
+    @static path /_next/static/* /static/* /fonts/* /favicon.ico *.woff2 *.woff *.ttf *.eot *.svg *.png *.jpg *.jpeg *.gif *.mp4 *.webm
+    header @static Cache-Control "public, max-age=31536000, immutable"
+
+    # HTML 不缓存
+    @html {
+        path *.html /
+        not path /_next/static/*
+    }
+    header @html Cache-Control "no-cache, no-store, must-revalidate"
+
+    # try_files: 先尝试精确文件，再尝试 .html 后缀，最后回退 index.html
+    try_files {path} {path}.html /index.html
+    file_server
+
+    # WordPress 媒体资源 (原 wp.frog.co)
+    handle_path /wp/* {
+        root * /var/www/website/zgx/wp.frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # Pardot 表单页 (原 go.frog.co)
+    handle_path /go/* {
+        root * /var/www/website/zgx/go.frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # frog.co 简站 (原 frog.co)
+    handle_path /frog/* {
+        root * /var/www/website/zgx/frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # Cannes 活动站 (原 cannes.frog.co)
+    handle_path /cannes/* {
+        root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # 可持续发展卡站 (原 cardsforsustainability.frog.co)
+    handle_path /cards/* {
+        root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # 米兰设计周站 (原 milandesignweek.frog.co)
+    handle_path /milan/* {
+        root * /var/www/website/zgx/milandesignweek.frog.co
+        try_files {path} /index.html
+        file_server
+    }
+
+    # 日志
+    log {
+        output file /var/log/caddy/frog.log
+        format json
+    }
+}
