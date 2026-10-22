@@ -1,4 +1,4 @@
-:80 {
+http://8.218.15.246:80 {
     root * /var/www/website/zgx/www.frog.co
     encode gzip
 
@@ -10,9 +10,6 @@
         not path /_next/static/*
     }
     header @html Cache-Control "no-cache, no-store, must-revalidate"
-
-    try_files {path} {path}/index.html {path}.html /index.html
-    file_server
 
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
@@ -50,8 +47,64 @@
         file_server
     }
 
-    log {
-        output file /var/log/caddy/frog.log
-        format json
+    handle {
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+}
+
+https://8.218.15.246:443 {
+    tls internal
+    root * /var/www/website/zgx/www.frog.co
+    encode gzip
+
+    @static path /_next/static/* /static/* /fonts/* /favicon.ico *.woff2 *.woff *.ttf *.eot *.svg *.png *.jpg *.jpeg *.gif *.mp4 *.webm
+    header @static Cache-Control "public, max-age=31536000, immutable"
+
+    @html {
+        path *.html /
+        not path /_next/static/*
+    }
+    header @html Cache-Control "no-cache, no-store, must-revalidate"
+
+    handle_path /wp/* {
+        root * /var/www/website/zgx/wp.frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle_path /go/* {
+        root * /var/www/website/zgx/go.frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle_path /frog/* {
+        root * /var/www/website/zgx/frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle_path /cannes/* {
+        root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle_path /cards/* {
+        root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle_path /milan/* {
+        root * /var/www/website/zgx/milandesignweek.frog.co
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
+    }
+
+    handle {
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 }
