@@ -13,43 +13,197 @@ http://8.218.15.246:80 {
 
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /go/* {
         root * /var/www/website/zgx/go.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /frog/* {
         root * /var/www/website/zgx/frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /cannes/* {
         root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /cards/* {
         root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /milan/* {
         root * /var/www/website/zgx/milandesignweek.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle {
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 }
 
@@ -69,42 +223,196 @@ https://8.218.15.246:443 {
 
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /go/* {
         root * /var/www/website/zgx/go.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /frog/* {
         root * /var/www/website/zgx/frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /cannes/* {
         root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /cards/* {
         root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle_path /milan/* {
         root * /var/www/website/zgx/milandesignweek.frog.co
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 
     handle {
-        try_files {path} {path}/index.html {path}.html /index.html
-        file_server
+        route {
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                file_server
+            }
+            handle {
+                try_files /index.html
+                file_server
+            }
+        }
     }
 }
