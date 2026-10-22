@@ -11,214 +11,43 @@
     }
     header @html Cache-Control "no-cache, no-store, must-revalidate"
 
-    route {
-        @exactFile file {
-            try_files {path}
-        }
-        handle @exactFile {
-            file_server
-        }
-
-        @dirIndex file {
-            try_files {path}/index.html
-        }
-        handle @dirIndex {
-            rewrite {path}/index.html
-            file_server
-        }
-
-        @flatHtml file {
-            try_files {path}.html
-        }
-        handle @flatHtml {
-            rewrite {path}.html
-            file_server
-        }
-
-        handle {
-            rewrite /index.html
-            file_server
-        }
-    }
+    try_files {path} {path}/index.html {path}.html /index.html
+    file_server
 
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     handle_path /go/* {
         root * /var/www/website/zgx/go.frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     handle_path /frog/* {
         root * /var/www/website/zgx/frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     handle_path /cannes/* {
         root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     handle_path /cards/* {
         root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     handle_path /milan/* {
         root * /var/www/website/zgx/milandesignweek.frog.co
-        route {
-            @exactFile file {
-                try_files {path}
-            }
-            handle @exactFile {
-                file_server
-            }
-            @dirIndex file {
-                try_files {path}/index.html
-            }
-            handle @dirIndex {
-                rewrite {path}/index.html
-                file_server
-            }
-            @flatHtml file {
-                try_files {path}.html
-            }
-            handle @flatHtml {
-                rewrite {path}.html
-                file_server
-            }
-            handle {
-                rewrite /index.html
-                file_server
-            }
-        }
+        try_files {path} {path}/index.html {path}.html /index.html
+        file_server
     }
 
     log {
