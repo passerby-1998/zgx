@@ -1,7 +1,3 @@
-# Caddy 配置文件 - 监听所有接口的80端口 (HTTP)
-# 放置位置: /etc/caddy/Caddyfile
-# 访问地址: http://8.218.15.246/
-
 :80 {
     root * /var/www/website/zgx/www.frog.co
     encode gzip
@@ -15,9 +11,7 @@
     }
     header @html Cache-Control "no-cache, no-store, must-revalidate"
 
-    # Next.js 静态导出路由 - 用 route 精确控制顺序
     route {
-        # 1. 精确文件直接服务 (CSS/JS/图片等)
         @exactFile file {
             try_files {path}
         }
@@ -25,7 +19,6 @@
             file_server
         }
 
-        # 2. 目录式页面: /work/slug -> /work/slug/index.html
         @dirIndex file {
             try_files {path}/index.html
         }
@@ -34,7 +27,6 @@
             file_server
         }
 
-        # 3. 扁平式页面: /designmind -> /designmind.html
         @flatHtml file {
             try_files {path}.html
         }
@@ -43,7 +35,6 @@
             file_server
         }
 
-        # 4. 兜底: 回退到首页
         handle {
             rewrite /index.html
             file_server
@@ -53,78 +44,180 @@
     handle_path /wp/* {
         root * /var/www/website/zgx/wp.frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
     handle_path /go/* {
         root * /var/www/website/zgx/go.frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
     handle_path /frog/* {
         root * /var/www/website/zgx/frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
     handle_path /cannes/* {
         root * /var/www/website/zgx/cannes.frog.co/cannes.frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
     handle_path /cards/* {
         root * /var/www/website/zgx/cardsforsustainability.frog.co/cardsforsustainability.frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
     handle_path /milan/* {
         root * /var/www/website/zgx/milandesignweek.frog.co
         route {
-            @exactFile file { try_files {path} }
-            handle @exactFile { file_server }
-            @dirIndex file { try_files {path}/index.html }
-            handle @dirIndex { rewrite {path}/index.html; file_server }
-            @flatHtml file { try_files {path}.html }
-            handle @flatHtml { rewrite {path}.html; file_server }
-            handle { rewrite /index.html; file_server }
+            @exactFile file {
+                try_files {path}
+            }
+            handle @exactFile {
+                file_server
+            }
+            @dirIndex file {
+                try_files {path}/index.html
+            }
+            handle @dirIndex {
+                rewrite {path}/index.html
+                file_server
+            }
+            @flatHtml file {
+                try_files {path}.html
+            }
+            handle @flatHtml {
+                rewrite {path}.html
+                file_server
+            }
+            handle {
+                rewrite /index.html
+                file_server
+            }
         }
     }
 
